@@ -1,0 +1,27 @@
+group 'com.hendisantika.junit'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+buildscript {
+    repositories {
+        mavenLocal()
+    }
+    dependencies {
+//        classpath 'net.saliman:gradle-cobertura-plugin:2.4.0'
+    }
+}
+
+dependencies {
+    testCompile('junit:junit:4.12') {
+        exclude group: 'org.hamcrest'
+    }
+    testCompile 'org.hamcrest:hamcrest-library:1.3'
+}

@@ -4,9 +4,10 @@
 
 Tools untuk automated testing:
 
-* Java : JUnit, TestNG
+* Java : JUnit, TestNG, Mockito
 * JavaScript : Jasmine, Karma
 * Web Browser : Selenium
+* Performance : Gatling & JMeter
 
 Manfaat automated testing:
 
